@@ -1,0 +1,53 @@
+.card {
+  border-radius: 0px;
+  margin-top: -10px;
+  margin-right: 5px;
+  border: white;
+  /* max-height: 100%;
+  min-height: 75%; */
+  /* min-height: 81vh; */
+  height: 80vh;
+  width: 67vw;
+}
+
+@media only screen and (min-width: 1124px) {
+  .card {
+    border-radius: 0px;
+    margin-top: -10px;
+    margin-right: 5px;
+    border: white;
+    /* max-height: 100%;
+  min-height: 75%; */
+    /* min-height: 81vh; */
+    height: 79vh;
+    width: 67vw;
+  }
+}
+
+.style {
+  font-size: 50px;
+}
+.font {
+  font-family: "Robto", sans-serif;
+  color: #8da195;
+  font-size: 17px;
+}
+
+th {
+  font-family: "Roboto", sans-serif;
+  color: #161716;
+  font-size: 14px;
+  position: sticky;
+  top: 0px;
+}
+
+.look {
+  color: #8da195;
+  font-size: 17px;
+}
+
+.look1 {
+  color: #8da195;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}

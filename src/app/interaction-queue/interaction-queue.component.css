@@ -1,0 +1,47 @@
+.card {
+  border-radius: 0px;
+  margin: 0px;
+  border: white;
+  /* height: 130px; */
+  height: 20.678513731825525vh;
+  margin-top: -10px;
+}
+
+.chart {
+  width: 30vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+@media only screen and (min-width: 1224px) {
+  .card {
+    border-radius: 0px !important;
+    margin-top: -10px;
+    margin-left: -10px;
+    border: white;
+    height: 135px;
+  }
+} */
+
+/* @media only screen and (min-width: 844px) {
+  .chart {
+    width: 30vw;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+} */
+
+.font {
+  font-family: "Roboto", sans-serif;
+  color: #8da195;
+}
+
+.look {
+  color: #8da195;
+  font-size: 17px;
+}

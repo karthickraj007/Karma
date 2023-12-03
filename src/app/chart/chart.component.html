@@ -1,0 +1,62 @@
+<div class="card" style="position: fixed">
+  <div class="d-flex flex-row justify-content-between mx-2">
+    <div class="p-2 font">
+      <h5 style="font-size: 14px !important">Agent List</h5>
+    </div>
+    <div class="p-2">
+      <!-- <input type="text" class="mx-2" /> -->
+
+      <i class="fa fa-cog mx-2 look" aria-hidden="true"></i>
+      <i class="fa fa-clock-o mx-2 look" aria-hidden="true"></i>
+      <i class="fa fa-trash mx-2 look" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="container-fluid" style="overflow-y: auto; overflow-x: auto">
+    <table class="table table-hover m-0">
+      <thead>
+        <tr class="font">
+          <th>Agent</th>
+          <th>Exit</th>
+          <th>Status</th>
+          <th>Interaction</th>
+          <th>CustomerNo</th>
+          <th>UniqNumber</th>
+          <th>Tic</th>
+          <th>Ac</th>
+          <th>TOBC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let k of data">
+          <td>
+            <div class="look1">{{ k.agent }}</div>
+          </td>
+          <td>
+            <div class="look1">{{ k.Exit }}</div>
+          </td>
+          <td>
+            <div class="look1">{{ k.Interaction }}</div>
+          </td>
+          <td>
+            <div class="look1">{{ k.CustomerNo }}</div>
+          </td>
+          <td>
+            <div class="look1">{{ k.UniqNumber }}</div>
+          </td>
+          <td>
+            <div class="look1">{{ k.Tic }}</div>
+          </td>
+          <td>
+            <div class="look1">{{ k.Ac }}</div>
+          </td>
+          <td>
+            <div class="look1">{{ k.TOBC }}</div>
+          </td>
+          <td>
+            <div class="look1">{{ k.agent }}</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

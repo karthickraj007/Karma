@@ -1,0 +1,49 @@
+.card {
+  border-radius: 0px !important;
+  margin-top: -10px;
+  border: white;
+  /* min-height: 18.093699515347335vh; */
+  height: 18.093699515347335vh;
+  /* height: 20.25vh; */
+}
+
+@media only screen and (min-width: 1124px) {
+  .card {
+    border-radius: 0px !important;
+    margin-top: -10px;
+    border: white;
+    min-height: 19vh;
+  }
+  .border-height {
+    height: 13vh;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .card {
+    border-radius: 0px !important;
+    margin-top: -10px;
+    border: white;
+    min-height: 18vh;
+  }
+  .border-height {
+    height: 13vh;
+  }
+}
+
+.border-height {
+  height: 11vh;
+}
+.style {
+  font-size: 40px;
+}
+
+.font {
+  font-family: "Roboto", sans-serif;
+  color: #8da195;
+}
+
+.look {
+  color: #8da195;
+  font-size: 17px;
+}

@@ -1,0 +1,37 @@
+.card {
+  border-radius: 0px;
+  margin: 0px;
+  border: white;
+  height: 19.678514vh;
+  /* height: 123px; */
+  margin-top: -10px;
+}
+@media only screen and (min-width: 1224px) {
+  .card {
+    border-radius: 0px;
+    margin: 0px;
+    border: white;
+    height: 19vh;
+    /* height: 123px; */
+    margin-top: -10px;
+  }
+}
+
+.chart1 {
+  width: 28vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.font {
+  font-family: "Roboto", sans-serif;
+  color: #8da195;
+}
+
+.look {
+  color: #8da195;
+  font-size: 17px;
+}
