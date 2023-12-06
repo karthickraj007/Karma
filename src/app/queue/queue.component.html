@@ -4,9 +4,9 @@
       <h4 style="font-size: 14px !important" class="font">In-queue Abandos</h4>
     </div>
     <div class="p-2">
-      <i class="fa fa-clock-o mx-2 look" aria-hidden="true"></i>
+      <!-- <i class="fa fa-clock-o mx-2 look" aria-hidden="true"></i>
       <i class="fa fa-cog mx-2 look" aria-hidden="true"></i>
-      <i class="fa fa-trash mx-2 look" aria-hidden="true"></i>
+      <i class="fa fa-trash mx-2 look" aria-hidden="true"></i> -->
     </div>
   </div>
   <div
@@ -20,16 +20,16 @@
     "
   >
     <div>
-      <h5 class="style">65%</h5>
+      <h5 class="style">{{overallData?.aboundedCallPercentage}}%</h5>
     </div>
     <div
       style="border: 1px solid rgba(192, 192, 192, 0.151); height: 11vh"
     ></div>
     <div class="font">
       <h5 style="font-size: 14px !important; padding-top: 10px">
-        Pre-queue Abandos:
+        In-queue Abandos: {{overallData?.aboundedCallCount}}
       </h5>
-      <h5 style="font-size: 14px !important">Total Inbound calls:</h5>
+      <h5 style="font-size: 14px !important">Total Inbound calls: {{overallData?.inboundCallCount}}</h5>
     </div>
   </div>
 </div>

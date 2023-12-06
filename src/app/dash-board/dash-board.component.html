@@ -4,8 +4,8 @@
       <h4 style="font-size: 14px !important">Pre-queue Abandos</h4>
     </div>
     <div class="p-2">
-      <i class="fa fa-cog mx-2 look" aria-hidden="true"></i>
-      <i class="fa fa-trash mx-2 look" aria-hidden="true"></i>
+      <!-- <i class="fa fa-cog mx-2 look" aria-hidden="true"></i>
+      <i class="fa fa-trash mx-2 look" aria-hidden="true"></i> -->
     </div>
   </div>
   <div
@@ -20,7 +20,7 @@
     "
   >
     <div>
-      <h5 class="style">25%</h5>
+      <h5 class="style">{{overallData?.aboundedCallPercentage}}%</h5>
     </div>
     <div
       class="border-height"
@@ -28,9 +28,9 @@
     ></div>
     <div class="font">
       <h5 style="font-size: 14px !important; padding-top: 10px">
-        Pre-queue Abandos:
+        Pre-queue Abandos: {{overallData?.aboundedCallCount}}
       </h5>
-      <h5 style="font-size: 14px !important">Local Inbound calls:</h5>
+      <h5 style="font-size: 14px !important">Local Inbound calls: {{overallData?.inboundCallCount}}</h5>
     </div>
   </div>
 </div>

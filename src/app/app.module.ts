@@ -9,6 +9,8 @@ import { InteractionQueueComponent } from './interaction-queue/interaction-queue
 import { ChartComponent } from './chart/chart.component';
 import { QueueComponent } from './queue/queue.component';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
+import { AppInterceptor } from './app.interceptor';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,10 +24,14 @@ import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [
-    provideClientHydration()
+  providers: [{
+      provide: HTTP_INTERCEPTORS,
+      useClass: AppInterceptor,
+      multi: true
+    }  
   ],
   bootstrap: [AppComponent]
 })

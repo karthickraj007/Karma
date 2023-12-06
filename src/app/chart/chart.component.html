@@ -6,9 +6,9 @@
     <div class="p-2">
       <!-- <input type="text" class="mx-2" /> -->
 
-      <i class="fa fa-cog mx-2 look" aria-hidden="true"></i>
+      <!-- <i class="fa fa-cog mx-2 look" aria-hidden="true"></i>
       <i class="fa fa-clock-o mx-2 look" aria-hidden="true"></i>
-      <i class="fa fa-trash mx-2 look" aria-hidden="true"></i>
+      <i class="fa fa-trash mx-2 look" aria-hidden="true"></i> -->
     </div>
   </div>
   <div class="container-fluid" style="overflow-y: auto; overflow-x: auto">
@@ -16,37 +16,31 @@
       <thead>
         <tr class="font">
           <th>Agent</th>
-          <th>Exit</th>
           <th>Status</th>
           <th>Interaction</th>
           <th>CustomerNo</th>
-          <th>UniqNumber</th>
-          <th>Tic</th>
-          <th>Ac</th>
-          <th>TOBC</th>
+          <th>TIOBC</th>
+          <!-- <th>TOBC</th> -->
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let k of data">
+        <tr *ngFor="let k of agentDetails">
           <td>
-            <div class="look1">{{ k.agent }}</div>
+            <div class="look1">{{ k.userName }}</div>
           </td>
           <td>
-            <div class="look1">{{ k.Exit }}</div>
+            <div class="look1">{{ k.currentStatus }}</div>
           </td>
           <td>
-            <div class="look1">{{ k.Interaction }}</div>
+            <div class="look1">{{(k && k?.voices && k?.voices.length!=0) ? k?.voices[0]?.chatType :'--'}}            </div>
           </td>
           <td>
-            <div class="look1">{{ k.CustomerNo }}</div>
+            <div class="look1">{{(k && k?.voices && k?.voices.length!=0) ? k?.voices[0]?.phoneNumber :'--'}}            </div>
           </td>
           <td>
-            <div class="look1">{{ k.UniqNumber }}</div>
+            <div class="look1">{{ k.TotalChatCount }}</div>
           </td>
-          <td>
-            <div class="look1">{{ k.Tic }}</div>
-          </td>
-          <td>
+          <!-- <td>
             <div class="look1">{{ k.Ac }}</div>
           </td>
           <td>
@@ -54,7 +48,7 @@
           </td>
           <td>
             <div class="look1">{{ k.agent }}</div>
-          </td>
+          </td> -->
         </tr>
       </tbody>
     </table>
