@@ -1,14 +1,43 @@
-<div class="card">
-  <div class="d-flex flex-row justify-content-between mx-2">
-    <div class="pt-2 font">
-      <h4 style="font-size: 14px !important">Wrapup Counter</h4>
-    </div>
-    <div class="pt-2">
-      <!-- <i class="fa fa-cog mx-2 look" aria-hidden="true"></i>
-      <i class="fa fa-trash mx-2 look" aria-hidden="true"></i> -->
-    </div>
+<div class="card container-fluid">
+  <div class="font pt-1">
+    <h4 style="font-size: 14px !important">Wrapup Count</h4>
   </div>
-  <div class="chart1">
-    <canvas id="MyChart1" style="margin-bottom: 25px">{{ chart1 }}</canvas>
+  <!-- <div class="p-2">
+      <i class="fa fa-clock-o mx-2 look" aria-hidden="true"></i>
+      <i class="fa fa-cog mx-2 look" aria-hidden="true"></i>
+      <i class="fa fa-trash mx-2 look" aria-hidden="true"></i>
+    </div> -->
+  <div class="row">
+    <div class="col-4 font">
+      <div style="font-size: 12px" *ngFor="let k of values.slice(0, 5)">
+        <div style="display: flex; align-items: center">
+          <div
+            style="width: 10px; height: 10px; margin-right: 9px"
+            [ngStyle]="{ 'background-color': getBackgroundColor(k) }"
+          ></div>
+          <div>
+            {{ k }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 font">
+      <div *ngFor="let k of values.slice(5, 10)" style="font-size: 12px">
+        <div style="display: flex; align-items: center">
+          <div
+            style="width: 10px; height: 10px; margin-right: 8px"
+            [ngStyle]="{ 'background-color': getBackgroundColor(k) }"
+          ></div>
+          <div>
+            {{ k }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="chart1">
+        <canvas id="MyChart1" style="margin-bottom: 25px">{{ chart1 }}</canvas>
+      </div>
+    </div>
   </div>
 </div>

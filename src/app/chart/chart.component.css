@@ -6,23 +6,20 @@
   /* max-height: 100%;
   min-height: 75%; */
   /* min-height: 81vh; */
-  height: 80vh;
-  width: 67vw;
+  height: 80.5vh;
+  width: 58vw;
 }
 
-@media only screen and (min-width: 1124px) {
+/* @media only screen and (min-width: 1124px) {
   .card {
     border-radius: 0px;
     margin-top: -10px;
     margin-right: 5px;
     border: white;
-    /* max-height: 100%;
-  min-height: 75%; */
-    /* min-height: 81vh; */
     height: 79vh;
     width: 67vw;
   }
-}
+} */
 
 .style {
   font-size: 50px;

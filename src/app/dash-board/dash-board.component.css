@@ -7,7 +7,7 @@
   /* height: 20.25vh; */
 }
 
-@media only screen and (min-width: 1124px) {
+/* @media only screen and (min-width: 1124px) {
   .card {
     border-radius: 0px !important;
     margin-top: -10px;
@@ -17,7 +17,7 @@
   .border-height {
     height: 13vh;
   }
-}
+} */
 
 @media only screen and (max-width: 850px) {
   .card {
@@ -32,7 +32,7 @@
 }
 
 .border-height {
-  height: 11vh;
+  height: 12vh;
 }
 .style {
   font-size: 40px;

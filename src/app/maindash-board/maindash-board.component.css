@@ -2,28 +2,49 @@
   border-radius: 0px;
   margin: 0px;
   border: white;
-  height: 19.678514vh;
+  height: 20.678514vh;
   /* height: 123px; */
   margin-top: -10px;
 }
-@media only screen and (min-width: 1224px) {
+/* @media only screen and (min-width: 1224px) {
   .card {
     border-radius: 0px;
     margin: 0px;
     border: white;
     height: 19vh;
-    /* height: 123px; */
     margin-top: -10px;
   }
+} */
+
+.circled-li {
+  list-style-type: none;
+  padding-left: 15px;
+  position: relative;
+}
+
+.circled-li:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ul {
+  list-style-type: none;
 }
 
 .chart1 {
-  width: 28vw;
-  height: 15vh;
+  width: 33vw;
+  height: 18vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
+  justify-content: start !important;
+  padding-right: 16vw;
+  padding-bottom: 2vh;
 }
 
 .font {

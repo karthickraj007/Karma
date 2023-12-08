@@ -24,7 +24,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let k of agentDetails">
+        <tr *ngFor="let k of output">
           <td>
             <div class="look1">{{ k.userName }}</div>
           </td>
@@ -32,10 +32,22 @@
             <div class="look1">{{ k.currentStatus }}</div>
           </td>
           <td>
-            <div class="look1">{{(k && k?.voices && k?.voices.length!=0) ? k?.voices[0]?.chatType :'--'}}            </div>
+            <div class="look1">
+              <!-- {{
+                k && k?.voices && k?.voices.length != 0
+                  ? k?.voices[0]?.chatType
+                  : "--"
+              }} -->
+            </div>
           </td>
           <td>
-            <div class="look1">{{(k && k?.voices && k?.voices.length!=0) ? k?.voices[0]?.phoneNumber :'--'}}            </div>
+            <div class="look1">
+              <!-- {{
+                k && k?.voices && k?.voices.length != 0
+                  ? k?.voices[0]?.phoneNumber
+                  : "--"
+              }} -->
+            </div>
           </td>
           <td>
             <div class="look1">{{ k.TotalChatCount }}</div>
