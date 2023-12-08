@@ -7,9 +7,52 @@ import Chart from 'chart.js/auto';
 })
 export class MaindashBoardComponent {
   public chart1: any;
+  public values: string[] = [
+    'Description',
+    'Wrong_Number',
+    'Training_Call',
+    'Mc_Paid',
+    'MC_Ongoing',
+    'No_Response',
+    'Booking_Ongoing',
+    'Booking_Confirmed',
+    'Complaint_Resolved',
+    'Complaint_Escalated',
+    'General Enq Complete',
+    'General Enq Ongoing',
+    'Disconnected Number',
+    'Dialler Completed',
+  ];
 
   ngOnInit(): void {
     this.createChart();
+  }
+
+  getBackgroundColor(k: any): string {
+    switch (k) {
+      case 'Description':
+        return 'red';
+      case 'Wrong_Number':
+        return 'pink';
+      case 'Training_Call':
+        return 'green';
+      case 'Mc_Paid':
+        return 'yellow';
+      case 'MC_Ongoing':
+        return 'orange';
+      case 'Booking_Ongoing':
+        return 'purple';
+      case 'Booking_Confirmed':
+        return 'black';
+      case 'Complaint_Resolved':
+        return 'blue';
+      case 'Complaint_Escalated':
+        return 'brown';
+      case 'No_Response':
+        return 'orange';
+      default:
+        return 'blue';
+    }
   }
 
   createChart() {
@@ -29,7 +72,11 @@ export class MaindashBoardComponent {
               'green',
               'yellow',
               'orange',
+              'purple',
+              'black',
               'blue',
+              'brown',
+              'grey',
             ],
             hoverOffset: 4,
           },
@@ -37,6 +84,11 @@ export class MaindashBoardComponent {
       },
       options: {
         aspectRatio: 2.5,
+        plugins: {
+          legend: {
+            position: 'right',
+          },
+        },
       },
     });
   }

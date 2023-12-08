@@ -12,7 +12,7 @@
     style="
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       /* align-items: center; */
       margin-left: 30px;
       margin-right: 40px;
@@ -20,7 +20,7 @@
     "
   >
     <div>
-      <h5 class="style">{{overallData?.aboundedCallPercentage}}%</h5>
+      <h5 class="style">{{ overallData?.aboundedCallPercentage }}%</h5>
     </div>
     <div
       class="border-height"
@@ -28,9 +28,11 @@
     ></div>
     <div class="font">
       <h5 style="font-size: 14px !important; padding-top: 10px">
-        Pre-queue Abandos: {{overallData?.aboundedCallCount}}
+        Pre-queue Abandos: {{ overallData?.aboundedCallCount }}
       </h5>
-      <h5 style="font-size: 14px !important">Local Inbound calls: {{overallData?.inboundCallCount}}</h5>
+      <h5 style="font-size: 14px !important">
+        Local Inbound calls: {{ overallData?.inboundCallCount }}
+      </h5>
     </div>
   </div>
 </div>
